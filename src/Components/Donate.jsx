@@ -1,4 +1,4 @@
-const assetDirectory = '/Donate — Jafuta Foundation_files'
+const assetDirectory = `${import.meta.env.BASE_URL}Donate%20%E2%80%94%20Jafuta%20Foundation_files`
 
 const donationOptions = [
   {

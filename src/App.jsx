@@ -6,6 +6,7 @@ import VisionPages from './Components/VisionPages'
 import AboutPages from './Components/AboutPages'
 import TeamPages from './Components/TeamPages'
 import Donate from './Components/Donate'
+import BlogPages from './Components/BlogPages'
 
 
 function AppContent() {
@@ -16,18 +17,14 @@ function AppContent() {
       <div className="relative">
         <nav
           className={`absolute inset-x-0 top-0 z-10 flex items-center gap-2 p-3 sm:gap-4 sm:p-4 lg:gap-6 ${
-            isDonatePage ? 'text-[#514944]' : 'text-blue-500'
+            isDonatePage ? 'text-[#514944]' : 'text-blue-200'
           }`}
         >
 
           <Link className="block h-20 w-20 shrink-0 sm:h-24 sm:w-24 lg:h-40 lg:w-40" to="/">
 
             <img
-              src={
-                isDonatePage
-                  ? '/Donate — Jafuta Foundation_files/Jafuta+Logo+Home+page+(1).png'
-                  : '//images.squarespace-cdn.com/content/v1/6924281a79368207099d0dd5/ec440df1-11b0-43be-983f-6222f2770111/Jafuta+Logo+Home+page+%281%29.png?format=1500w'
-              }
+              src={`${import.meta.env.BASE_URL}Donate%20%E2%80%94%20Jafuta%20Foundation_files/Jafuta+Logo+Home+page+(1).png`}
               alt="Jafuta logo"
               className="h-full w-full object-contain"
             />
@@ -70,7 +67,7 @@ function AppContent() {
           <Route path="/Projects" element={<div className="p-6">Projects</div>} />
           <Route path="/About" element={<AboutPages />} />
           <Route path="/Team" element={<TeamPages />} />
-          <Route path="/Blog" element={<div className="p-6">Blog</div>} />
+          <Route path="/Blog" element={<BlogPages />} />
           <Route path="/Donate" element={<Donate />} />
         </Routes>
       </div>
@@ -81,7 +78,7 @@ function AppContent() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AppContent />
     </BrowserRouter>
   )

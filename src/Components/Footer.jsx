@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logo from '../Images-home/Jafuta-candid-logo.webp'
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
 
           
         <div className='mt-10'>
-          <img src="src/Images-home/Jafuta-candid-logo.webp" alt="" />
+          <img src={logo} alt="Jafuta Foundation" />
         </div>
 
         </address>

@@ -1,4 +1,10 @@
 
+import womenEmpowermentImage from '../Images-home/women-africa-hero-image.webp'
+import educationImage from '../Images-home/tablet-childs.webp'
+import waterImage from '../Images-home/Tap-water.png'
+import livelihoodsImage from '../Images-home/woman-garden-africa.webp'
+import conservationImage from '../Images-home/Animals.png'
+import artsImage from '../Images-home/handcraft.png'
 import Hero from './hero'
 import HomeThree from './HomeThree'
 import HomeTwo from './HomeTwo'
@@ -18,7 +24,7 @@ const HomePages = () => {
         description="Through deepened impact in gender empowerment, girls’ dignity, education, scholarships,
          and vocational skills training, Jafuta Foundation creates pathways for women and young people to build confidence, and develop meaningful livelihoods"
 
-        image="src/Images-home/women-africa-hero-image.webp"
+        image={womenEmpowermentImage}
   
       />
 
@@ -29,7 +35,7 @@ const HomePages = () => {
         learning, teacher development & training, learning resources, scholarships, and 
         access to technology—bridging the digital divide and expanding education opportunities for rural children and youth. "
 
-        image="src/Images-home/tablet-childs.webp"
+        image={educationImage}
         button=<button>Learn More</button>
         reverse={true}
       />
@@ -40,7 +46,7 @@ const HomePages = () => {
         description="Improving health and livelihoods by expanding access to solar-powered boreholes/wells, 
         clean and accessible water points, safe sanitation, hygiene education, mobile health clinics, and 
         mental health education and counselling within rural communities."
-        image="src/Images-home/Tap-water.png"
+        image={waterImage}
   
       />
 
@@ -51,7 +57,7 @@ const HomePages = () => {
         nutritional community gardens, climate-smart agriculture, and the growing and distribution
         of food-bearing and indigenous trees"
         
-        image="src/Images-home/woman-garden-africa.webp"
+        image={livelihoodsImage}
 
         reverse={true}
   
@@ -63,7 +69,7 @@ const HomePages = () => {
         description="We protect wildlife while supporting the communities that live alongside it. 
         Through education, conflict-mitigation, habitat restoration, and conservation-linked livelihoods
         , we  can help people and wildlife to better coexist safely and sustainably."
-        image="src/Images-home/Animals.png"
+        image={conservationImage}
   
       />
 
@@ -72,7 +78,7 @@ const HomePages = () => {
 
         description="From deep cultural roots to contemporary creative talent, we celebrate Zimbabwe’s 
         identity through artistic and visual expression."
-        image="src/Images-home/handcraft.png"
+        image={artsImage}
          reverse={true}
   
       />
